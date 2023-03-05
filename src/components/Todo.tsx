@@ -1,6 +1,5 @@
-import { List, Typography, ListItem, IconButton } from '@mui/material'
+import { Typography } from '@mui/material'
 import Button from '@mui/material/Button'
-import TextField from '@mui/material/TextField'
 import React, { useState } from 'react'
 import { useTodoContext } from '../context/TodoContext'
 import { InputField, TodoAppBox, TodoAppContainer, TodoAppHeading, TodoList, TodoListItemContainer, TodoListItem, TodoListItemText, DeleteIconButton } from '../styles/Todo'
@@ -9,7 +8,6 @@ import DeleteIcon from '@mui/icons-material/Delete';
 const Todo = () => {
 
     const value = useTodoContext()
-    console.log(value.item)
 
     const [item, setItem] = useState<string>('')
 
